@@ -1,0 +1,61 @@
+html,body{
+  font-family: sans-serif;
+}
+
+.login-container{
+  width: 250px;
+  margin: 15% auto 0;
+  text-align: center;
+}
+
+.input-element{
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin-top: 10px;
+}
+.login-container div{
+  padding: 10px 0px;
+}
+
+input:required ,input:focus{
+  box-shadow:none;
+  outline: none !important;
+}
+.error-message{
+  color: red;
+  font-size: 14px;
+}
+
+.btn{
+  padding: 5px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 26px;
+  cursor: pointer;
+  background-color: #39d33f
+}
+
+.planet-content{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-row-gap: 10px;
+  box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 1px 1px rgba(0,0,0,0.16);
+  
+}
+
+.search-header{
+  width: 40%;
+  text-align: center;
+  margin: auto
+}
+
+.planet-content{
+  margin: 20px;
+}
+
+.planet-content span{
+  display: block
+}

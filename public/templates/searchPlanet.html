@@ -1,0 +1,11 @@
+<div class="search-header">
+    <h2>Planets Search</h2>
+    <input class="input-element" type="text" ng-model="searchInput" placeholder="search for planets" ng-change="clearInput(searchInput)" />
+</div>
+
+<div class="planets-container">
+    <div ng-repeat="planet in planetsList | filter:{'name':searchInput}:strict" >
+        <planent-component planet-data="planet"></planent-component>
+      </div>
+</div>
+

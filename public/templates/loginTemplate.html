@@ -1,0 +1,17 @@
+<div class="login-container">
+  <form name="loginForm">
+    <h2>
+      Starwars Planets
+    </h2>
+    <div>
+      <input class="input-element" type="text" ng-model="userDetails.userName" placeholder="User Name" required="true" />
+    </div>
+    <div>
+      <input class="input-element" type="password" ng-model="userDetails.password" placeholder="Password" required="true" />
+    </div>
+    <div class="error-message">
+      <span ng-if="userDetails.invalidCredentials">Invalid username or password</span>
+    </div>
+    <button class="btn" ng-click="validateUser()" ng-disabled="loginForm.$invalid">Login</button>
+  </form>
+</div>
